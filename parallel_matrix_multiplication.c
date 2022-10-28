@@ -101,19 +101,19 @@ displaySquareMatrix(matrixResult,dimension);
 
 }
 int main(int argc, char* argv[]){
-clock_t t;
-t = clock();
+	clock_t t;
+    t = clock();
 int dim;
 printf("we will be multiplying two square matrix of order above 1000\n");
 printf("enter matrix order above 1000\n");
 scanf("%d",&dim);
 optimizedParallelMultiplyTest(dim);
-	
+
 t = clock() - t;
 
-double time_taker = ((double)t)/ CLOCKS_PER_SEC;
-	
-printf("time taken = %f",time_taken");
+double time_taken = ((double)t) / CLOCKS_PER_SEC; // in seconds
+
+printf ("time taken ==% f", time_taken");
 
 
 
